@@ -1,0 +1,39 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+<!-- GOOGLE FONTS -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+
+<div class="container">
+  <div class="row">
+  <div class="col-md-4 col-md-offset-4">
+    <div class="main-section-data">
+      <div class="row">
+
+
+
+
+            <form (submit)="onAddOffer()" >
+
+
+                <h4>Add Offer</h4>
+                <br>
+              	<div class="form-group">
+			    		    <input class="form-control" [(ngModel)]="titre" placeholder="Titre" name="Titre" type="text">
+			    		</div>
+			    		<div class="form-group">
+			    			<input class="form-control" [(ngModel)]="prix" placeholder="Prix" name="prix" type="text" value="">
+              </div>
+              <div class="form-group">
+			    			<input class="form-control" [(ngModel)]="description" placeholder="Description"  name="description" type="text" value="">
+			    		</div>
+              <button  style="border-radius:2px;" type="submit" class="btn btn-success">Add Offer</button>
+
+               </form>
+          </div>
+</div>
+</div>
+
+

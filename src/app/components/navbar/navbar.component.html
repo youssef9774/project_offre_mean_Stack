@@ -1,0 +1,28 @@
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+<div class="container" >
+
+
+<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+  <ul class="navbar-nav ">
+    <li>
+      <a class="nav-link" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]= "{exact:true}" >Home</a>
+    </li>
+    <li routerLinkActive="active"><a *ngIf="this.userService.isLoggedIn()"  class="nav-link" routerLink="/main">Main</a>  </li>
+  </ul>
+  <ul class="navbar-nav navbar-right">
+    <li   routerLinkActive="active">
+      <a class="nav-link" routerLink="/login"  *ngIf="!this.userService.isLoggedIn()">Login</a> </li>
+
+      <li routerLinkActive="active">
+      <a class="nav-link" routerLink="/register" *ngIf="!this.userService.isLoggedIn()" >Register</a>  </li>
+
+      <li><a href="#" class="nav-link" (click)="onLogout()" *ngIf="this.userService.isLoggedIn()" >Logout</a> </li>
+
+
+  </ul>
+</div>
+</div>
+</nav>
+
+</body>

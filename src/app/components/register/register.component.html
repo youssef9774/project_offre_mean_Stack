@@ -1,0 +1,34 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+<div class="container">
+    <div class="row">
+        <h3 class="col-sm-offset-3 col-sm-6">Signup</h3>
+    </div>
+    <div class="row">
+        <div class="col-sm-offset-1 col-sm-2">
+
+        </div>
+        <div class="col-sm-6">
+            <form  (submit)="onRegister()"  accept-charset="utf-8" class="form" role="form">
+                <div class="row">
+                    <div class="col-xs-6 col-md-6">
+                        <input type="text" name="first_name"  value="" class="form-control input-lg" placeholder="First Name"   [(ngModel)]="first_name" />
+                    </div>
+                    <div class="col-xs-6 col-md-6">
+                        <input type="text" name="last_name" value="" class="form-control input-lg" placeholder="Last Name"  [(ngModel)]="last_name" />
+                   </div>
+                </div>
+                <input type="email" name="email" value="" class="form-control input-lg" placeholder="Your Email" [(ngModel)]="email" />
+                <input type="password" name="password" value="" class="form-control input-lg" placeholder="Password"  [(ngModel)]="password"/>
+                <input type="text" name="adresse" value="" class="form-control input-lg" placeholder="Adresse" [(ngModel)]="adresse" />
+
+
+                    <br />
+                <button   class="btn btn-lg btn-primary btn-block signup-btn"  type="submit">Create my account</button>
+            </form>
+        </div>
+      </div>
+    </div>
